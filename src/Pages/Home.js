@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
+const Home = () => {
+    return (
+        <section id="home" className="home-section">
+            <div className="home-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my projects and learn more about me.</p>
+            </div>
+        </section>
+    );
 }
+
+export default Home;

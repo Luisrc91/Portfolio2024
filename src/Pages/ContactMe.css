@@ -1,0 +1,33 @@
+/* ContactMe.css */
+.contact-me-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-me-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-me-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.contact-me-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-me-content li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}

@@ -6,6 +6,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-family: 'Gabarito', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'MuseoModerno', sans-serif;
 }
 
 .footer p {

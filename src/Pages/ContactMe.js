@@ -12,8 +12,8 @@ const ContactMe = () => {
                 </p>
                 <ul>
                     <li>Email: Luisrcal100@gmail.com</li>
-                    <li>LinkedIn: </li>
-                    <li>GitHub: </li>
+                    <li>LinkedIn: https://www.linkedin.com/in/luisramirez0618/</li>
+                    <li>GitHub: https://github.com/Luisrc91</li>
                 </ul>
             </div>
         </section>

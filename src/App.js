@@ -16,6 +16,7 @@ function App() {
         <header className="App-header">
           <NavBar />
         </header>
+      {/* < Home /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />

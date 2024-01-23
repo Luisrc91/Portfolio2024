@@ -3,9 +3,10 @@ import React from 'react';
 import './ContactMe.css'; // Import the CSS file
 import GitHubLink from './GitHubLink';
 import LinkedinLink from './LinkedinLink';
+import GmailLink from './GmailLink';
 
 const ContactMe = () => {
-    const email = 'Luisrcal100@gmail.com';
+    // const email = 'Luisrcal100@gmail.com';
     return (
         <section className="contact-me-section">
             <div className="contact-me-content">
@@ -14,9 +15,11 @@ const ContactMe = () => {
                     Feel free to reach out to me through the following:
                 </p>
                 <ul>
-                <li>Email: <a href={`mailto:${email}`}>{email}</a></li>
-                    <GitHubLink username="Luisrc91" />
+                <GmailLink />
+
+                {/* <li>Email: <a href={`mailto:${email}`}>{email}</a></li> */}
                     <LinkedinLink />
+                    <GitHubLink username="Luisrc91" />
                 </ul>
             </div>
         </section>

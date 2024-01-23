@@ -2,20 +2,21 @@
 import React from 'react';
 import './ContactMe.css'; // Import the CSS file
 import GitHubLink from './GitHubLink';
+import LinkedinLink from './LinkedinLink';
 
 const ContactMe = () => {
+    const email = 'Luisrcal100@gmail.com';
     return (
         <section className="contact-me-section">
             <div className="contact-me-content">
                 <h2>Contact Me</h2>
                 <p>
-                    Feel free to reach out to me through the following channels:
+                    Feel free to reach out to me through the following:
                 </p>
                 <ul>
-                    <li>Email: Luisrcal100@gmail.com</li>
-                    <li>LinkedIn: https://www.linkedin.com/in/luisramirez0618/</li>
+                <li>Email: <a href={`mailto:${email}`}>{email}</a></li>
                     <GitHubLink username="Luisrc91" />
-                    {/* <li>GitHub: https://github.com/Luisrc91</li> */}
+                    <LinkedinLink />
                 </ul>
             </div>
         </section>

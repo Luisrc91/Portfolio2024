@@ -1,6 +1,7 @@
 // ContactMe.js
 import React from 'react';
 import './ContactMe.css'; // Import the CSS file
+import GitHubLink from './GitHubLink';
 
 const ContactMe = () => {
     return (
@@ -13,7 +14,8 @@ const ContactMe = () => {
                 <ul>
                     <li>Email: Luisrcal100@gmail.com</li>
                     <li>LinkedIn: https://www.linkedin.com/in/luisramirez0618/</li>
-                    <li>GitHub: https://github.com/Luisrc91</li>
+                    <GitHubLink username="Luisrc91" />
+                    {/* <li>GitHub: https://github.com/Luisrc91</li> */}
                 </ul>
             </div>
         </section>

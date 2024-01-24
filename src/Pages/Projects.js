@@ -1,26 +1,68 @@
-import React from 'react';
-import './Projects.css'; // Import the CSS file
+import React, { useEffect, useState } from 'react';
+import { getStarredRepositories, getRepositoryDetails } from './githubService';
+import './Projects.css'
 
 const Projects = () => {
-    return (
-        <section className="projects-section">
-            <div className="projects-content">
-                <h2>Projects</h2>
-                <p>
-                    Explore some of my featured projects below:
-                </p>
-                <div className="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
-                </div>
-                <div className="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
-                </div>
-                {/* Add more project cards as needed */}
-            </div>
-        </section>
-    );
-}
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {  
+        const repoData = await getStarredRepositories();
+
+        // Fetch additional details for each repository
+        const repoDetailsPromises = repoData.map(repo =>
+          getRepositoryDetails(repo.owner.login, repo.name)
+        );
+        const detailedRepos = await Promise.all(repoDetailsPromises);
+
+        // Combine original data with additional details
+        const reposWithDetails = repoData.map((repo, index) => ({
+          ...repo,
+          details: detailedRepos[index],
+        }));
+
+        setRepositories(reposWithDetails);
+      } catch (error) {
+        console.error('Error fetching starred repositories:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className="projects-section">
+      <div className="projects-content">
+        <h2>Projects</h2>
+        {repositories.length === 0 ? (
+          <p>No starred repositories found.</p>
+        ) : (
+          <div>
+            {repositories.map(repo => (
+              <div key={repo.id} className="project-card">
+                {/* <img
+                  src={repo.details.owner.avatar_url}
+                  alt={`${repo.owner.login}'s avatar`}
+                  className="repo-avatar"
+                /> */}
+                <h3>{repo.name}</h3>
+                <p>{repo.description}</p>
+                <a
+                  href={repo.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-link"
+                >
+                  GitHub Repository
+                </a>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default Projects;

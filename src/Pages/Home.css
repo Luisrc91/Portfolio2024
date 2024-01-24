@@ -4,48 +4,31 @@ body {
     max-height: 100vh;    
   }
 
-
-
-
 .home-section {
-    /* background-color: #f4f4f4; */
-    /* padding: 100px 10em; */
+        /* background-color: #f4f4f4; */
+
     text-align: center;
     font-family: 'Gabarito', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'MuseoModerno', sans-serif;
-    /* border: black solid ; */
     margin-top: 100px;
     padding: 100px;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* min-height: vh; */
-    /* min-width: 100vw; */
-
-
 }
 
 .home-content {
     max-width: 800px;
-    margin: 0 auto;
-    /* border: black solid ; */
-    
+    margin: 0 auto;   
 }
 
 .home-content h1 {
     font-size: 2.5rem;
     color: #333;
-    /* border: black solid ; */
-
-   
 }
 
 .home-content p {
     font-size: 1.2rem;
     color: #555;
     margin-top: 20px;
-    /* border: black solid ; */
-
-   
 }

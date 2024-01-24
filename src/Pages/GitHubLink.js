@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, GrLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function GitHubLink() {
   return (

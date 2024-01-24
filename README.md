@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# My name is Luis and this is my Portfolio!!
+
+### I created this Portfolio using ReactJs and JavaScript, using CSS for styling.
+
+
+
+## TO run this project using Vscode fork the repository, and clone it and run NPM Install.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Portfolio2024
+# Portfolio2024 -->

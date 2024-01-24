@@ -1,13 +1,15 @@
+// Projects.js
 import React, { useEffect, useState } from 'react';
 import { getStarredRepositories, getRepositoryDetails } from './githubService';
-import './Projects.css'
+import './Projects.css';
+import ProjectsPic from './ProjectsPic';
 
 const Projects = () => {
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      try {  
+      try {
         const repoData = await getStarredRepositories();
 
         // Fetch additional details for each repository
@@ -34,20 +36,21 @@ const Projects = () => {
   return (
     <div className="projects-section">
       <div className="projects-content">
-        <h2>Projects</h2>
+        <h2>Projects On GitHub</h2> 
+
         {repositories.length === 0 ? (
           <p>No starred repositories found.</p>
         ) : (
           <div>
             {repositories.map(repo => (
               <div key={repo.id} className="project-card">
-                {/* <img
-                  src={repo.details.owner.avatar_url}
-                  alt={`${repo.owner.login}'s avatar`}
-                  className="repo-avatar"
-                /> */}
                 <h3>{repo.name}</h3>
                 <p>{repo.description}</p>
+                <img
+                  src={`./images/${repo.name}.jpg`} // Adjust the path and file format as needed
+                  alt={`${repo.name} project`}
+                  className="project-image"
+                />
                 <a
                   href={repo.html_url}
                   target="_blank"

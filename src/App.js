@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import ContactMe from "./Pages/ContactMe";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
+import ProjectsPic from './Pages/ProjectsPic';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/ContactMe" element={<ContactMe />} />
+          <Route path="/MainProjects" element={<ProjectsPic />} />
         </Routes>
 
         <Footer />

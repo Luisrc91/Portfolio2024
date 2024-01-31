@@ -10,7 +10,7 @@ const About = () => {
                     Welcome to my portfolio! I am a passionate software developer with expertise in JavaScript, Python, React, TypeScript, ExpressJS, NodeJs, SQL and MongoDB.
                 </p>
                 <p>
-                    Feel free to explore my projects and get in touch with me if you have any questions or collaboration ideas.
+                    Hi, Im Luis <br /> Im from North Carolina, born in Mexico City  
                 </p>
             </div>
         </section>

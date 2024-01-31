@@ -10,8 +10,9 @@ const About = () => {
                     Welcome to my portfolio! <br /> I am a passionate software developer with expertise in JavaScript, Python, React, TypeScript, ExpressJS, NodeJs, SQL and MongoDB.
                 </p>
                 <p>
-                    Hi, Im Luis <br /> Im from North Carolina, I have always passionate about technology from TVs, Cell-phones and video games!! <br />
-                    I enjoy building websites from Front-end devolopment to Bank-end devolopment; I graduated from a North Carolina State University of a Software Developer Professional Certification. 
+                    Hi, Im Luis <br /> Im from North Carolina, I have always been passionate about technology from TVs, Cell-phones and video games!! <br />
+                    I enjoy building websites from Front-end development to Bank-end development; 
+                    I graduated from a North Carolina State University of a Software Developer Professional Certification. 
                 </p>
             </div>
         </section>

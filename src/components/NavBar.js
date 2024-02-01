@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import './Navbar.scss'; // Import the Sass file
+import './/NavBar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

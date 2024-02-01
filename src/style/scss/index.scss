@@ -1,0 +1,19 @@
+@import "./config";
+
+@import "./btnConfig";
+@import "./utilites";
+
+@import "./Components/footer";
+@import"./Components/navbar";
+
+@import "./pages/abaout";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/projects";
+
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+  }
+  

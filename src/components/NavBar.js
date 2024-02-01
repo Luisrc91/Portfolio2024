@@ -1,16 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+// import './Navbar.scss'; // Import the Sass file
 
 const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/About">About</Link>
-            <Link to="/MainProjects">Projects</Link>
-            <Link to="/ContactMe">Contact</Link>
-        </nav>
-    );
-}
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="navbar">
+      <button className="hamburger" onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+      <span className={`name ${isOpen ? 'visible' : ''}`}>Luis Ramirez</span>
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <li>
+          <Link to="/" onClick={closeMenu}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/About" onClick={closeMenu}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/MainProjects" onClick={closeMenu}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/ContactMe" onClick={closeMenu}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;

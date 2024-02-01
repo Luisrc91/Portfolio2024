@@ -1,7 +1,7 @@
 // Projects.js
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import './Projects.css'
+// import './Projects.css'
 import Recipe from '../assets/ABCL-recipe-book2023.png'
 import Trivia from '../assets/triviagameJs.png'
 import Event from '../assets/eventplanner-9d21c.web.app_login.png'

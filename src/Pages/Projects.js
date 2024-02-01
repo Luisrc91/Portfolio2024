@@ -1,7 +1,7 @@
 // Projects.js
 import React, { useEffect, useState } from 'react';
 import { getStarredRepositories, getRepositoryDetails } from './githubService';
-import './Projects.css';
+// import './Projects.css';
 import ProjectsPic from './ProjectsPic';
 
 const Projects = () => {

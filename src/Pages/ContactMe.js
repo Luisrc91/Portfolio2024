@@ -1,6 +1,6 @@
 // ContactMe.js
 import React from 'react';
-import './ContactMe.css';
+// import './ContactMe.css'; // Import the CSS file
 import GitHubLink from './GitHubLink';
 import LinkedinLink from './LinkedinLink';
 import GmailLink from './GmailLink';

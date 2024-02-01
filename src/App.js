@@ -10,8 +10,7 @@ import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import ProjectsPic from './Pages/ProjectsPic';
 
-// import './style/scss/index.scss'
-
+import './style/scss/index.scss'
 
 function App() {
   return (

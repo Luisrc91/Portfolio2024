@@ -1,22 +1,33 @@
 import React from 'react';
-import './About.css'; 
 
 const About = () => {
-    return (
-        <section className="about-section">
-            <div className="about-content">
-                <h2>About Me</h2>
-                <p>
-                    Welcome to my portfolio! <br /> I am a passionate software developer with expertise in JavaScript, Python, React, TypeScript, ExpressJS, NodeJs, SQL and MongoDB.
-                </p>
-                <p>
-                    Hi, Im Luis <br /> Im from North Carolina, I have always been passionate about technology from TVs, Cell-phones and video games!! <br />
-                    I enjoy building websites from Front-end development to Bank-end development; 
-                    I graduated from a North Carolina State University of a Software Developer Professional Certification. 
-                </p>
-            </div>
-        </section>
-    );
-}
+  return (
+    <div className="bg-black text-white py-12 px-4 min-h-screen">
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-6">
+          <h1 className="text-4xl font-bold">About Me</h1>
+        </div>
+        <div className="mb-6">
+          <p className="text-xl">
+            Hi, I’m <span className="font-bold">Luis Ramirez</span>, a dedicated software developer from North Carolina. 
+            With a professional certification from North Carolina State University, I specialize in full-stack development, 
+            working with technologies like JavaScript, Python, React, TypeScript, Node.js, Express, SQL, and MongoDB.
+          </p>
+        </div>
+        <div className="mb-6">
+          <p className="text-xl">
+            My passion for technology began early, spanning everything from TVs and cell phones to video games. I take pride in crafting 
+            seamless and efficient web applications from the front-end to the back-end, always striving for innovative solutions.
+          </p>
+        </div>
+        <div>
+          <p className="text-xl">
+            Let's build something amazing together!
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default About;

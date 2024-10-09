@@ -1,10 +1,9 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center h-[70vh] bg-black">
+    <div className=" min-h-screen flex items-center justify-center h-[70vh] bg-black">
       <div className="text-center px-5">
         <h1 className="text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block">

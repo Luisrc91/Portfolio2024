@@ -7,30 +7,30 @@ const Home = () => {
     <div className="flex items-center justify-center h-[70vh] bg-black">
       <div className="text-center px-5">
         <h1 className="text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 inline-block">
-            Welcome, I'm a
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block">
+             Welcome, I'm a
           </span>
         </h1>
-        <h1 className="text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold">
+        <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className="inline-block w-full"> {/* Added this line */}
             <TypeAnimation
               sequence={[
-                "Software Developer",
-                1000,
-                "Frontend Developer",
-                1000,
-                "Backend Developer",
-                1000,
+                "< Software Developer />",
+                950,
+                "< Frontend Developer />",
+                950,
+                "< Backend Developer />",
+                950,
               ]}
               wrapper="span"
-              speed={50}
+              speed={30}
               repeat={Infinity}
             />
           </span>
         </h1>
 
         <p className="text-white sm:text-lg my-6 lg:text-xl">
-          My name is Luis Ramirez and I am a Full Stack Developer.
+        Hello my name is Luis Ramirez, I am a Full Stack Developer.
         </p>
         <a
           href="/ContactMe"

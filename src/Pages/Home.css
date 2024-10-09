@@ -1,11 +1,10 @@
-body {
+/* body {
     box-sizing: content-box;
     max-width: 100vw;
     max-height: 100vh;    
   }
 
 .home-section {
-        /* background-color: #f4f4f4; */
 
     text-align: center;
     font-family: 'Gabarito', sans-serif;
@@ -31,4 +30,4 @@ body {
     font-size: 1.2rem;
     color: #555;
     margin-top: 20px;
-}
+} */

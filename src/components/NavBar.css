@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color: #333;
     padding: 15px 0;
     color: white;
@@ -24,17 +24,16 @@
   
   .navbar a:hover {
     border-bottom: 2px solid white;
-  }
+  } */
   
   /* Adjust the hamburger menu for mobile */
-  .hamburger {
+  /* .hamburger {
     display: none;
   }
 
   .nav-links{
     list-style-type: none;
     display: inline-flex;
-    /* margin-left: 800px; */
   }
 
   .navbar name { 
@@ -43,16 +42,15 @@
   
   @media (max-width: 768px) {
     .navbar {
-      /* align-items: normal;       */
       justify-content: space-around;
       gap: 15em;
       text-align: left;
-      padding: 10px; /* Reduce padding for mobile */
+      padding: 10px; 
     }
     
 
     .navbar a {
-      margin: 0 10px; /* Reduce margin for mobile */
+      margin: 0 10px; 
     }
   
     .hamburger {
@@ -77,11 +75,10 @@
     }
   
     .nav-links li {
-      /* text-align: center; */
       padding: 20px 0;
-      display: block; /* Display block to make links appear in one line block */
+      display: block; 
     }
 
-  }
+  } */
 
 

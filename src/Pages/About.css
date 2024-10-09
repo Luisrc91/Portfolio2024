@@ -1,11 +1,10 @@
-body {
+/* body {
     box-sizing: content-box;
     max-width: 100vw;
     max-height: 100vh;    
   }
 
 .about-section {
-    /* background-color: #f4f4f4; */
     margin-top: 100px;
     padding: 100px;
     justify-content: center;
@@ -30,4 +29,4 @@ body {
     font-size: 1.2rem;
     color: #555;
     margin-top: 20px;
-}
+} */

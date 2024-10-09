@@ -40,11 +40,11 @@ const Navbar = () => {
     <div className="">
       <div className="bg-black h-[90px] text-gray-400 max-auto flex justify-between items-center">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent ml-4">
-          Luis Ramirez
+          
         </h1>
         <ul className="hidden md:flex">
           <li className="p-5 transition duration-300 hover:text-red-500">
-            <Link to="/">Home</Link>
+            <Link to="/" >Home</Link>
           </li>
           <li className="p-5 transition duration-300 hover:text-red-500">
             <Link to="/About">About</Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <Link to="/MainProjects">Projects</Link>
           </li>
           <li className="p-5 transition duration-300 hover:text-red-500">
-            <Link to="/ContactMe">Contact</Link>
+            <Link to="/ContactMe">Contact me</Link>
           </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden mr-6">
@@ -69,13 +69,13 @@ const Navbar = () => {
         >
           <h1 className="text-3xl primary-color m-4">Menu</h1>
           <ul className="p-8 text-2xl">
-            <li className="p-2 transition duration-300 hover:text-red-500">
+            <li className="p-2  transition duration-300 hover:text-red-500">
               <Link to="/" onClick={handleLinkClick}>
                 Home
               </Link>
             </li>
             <li className="p-2 transition duration-300 hover:text-red-500">
-              <Link to="/About" onClick={handleLinkClick}>
+              <Link to="/About" onClick={handleLinkClick} activeClassName="text-red-500">
                 About
               </Link>
             </li>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </li>
             <li className="p-2 transition duration-300 hover:text-red-500">
               <Link to="/ContactMe" onClick={handleLinkClick}>
-                Contact
+                Contact me
               </Link>
             </li>
           </ul>

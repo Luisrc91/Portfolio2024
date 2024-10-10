@@ -61,7 +61,7 @@ const Navbar = () => {
           ref={navRef}
           className={
             nav
-              ? "rounded fixed h-full right-0 top-20 w-[50%] h-[85%] bg-black bg-opacity-70 ease-in-out duration-400"
+              ? "rounded fixed h-full right-0 top-20 w-[50%] h-[85%] bg-black ease-in-out duration-400"
               : "fixed right-[-100%]"
           }
           

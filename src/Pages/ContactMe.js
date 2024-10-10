@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import GitHubLink from "./GitHubLink";
 import LinkedinLink from "./LinkedinLink";
 import GmailLink from "./GmailLink";
 
 const ContactMe = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [note, setNote] = useState("");
+  const form = useRef();
+  const [statusMessage, setStatusMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log({ name, email, note });
+    setStatusMessage("Sending...");
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setStatusMessage("Email sent successfully!");
+        },
+        (error) => {
+          setStatusMessage("Failed to send email. Error: " + error.text);
+        }
+      );
+
+    e.target.reset();
   };
 
   return (
@@ -20,13 +38,14 @@ const ContactMe = () => {
         <p className="text-center mb-6">
           Feel free to reach out to me through the following:
         </p>
-        <ul className="flex space-x-10  justify-center mb-6">
+        <ul className="flex space-x-10 justify-center mb-6">
           <GmailLink />
           <LinkedinLink />
           <GitHubLink username="Luisrc91" />
         </ul>
+        <p className="text-white flex items-center justify-center px-4">or</p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
             <label className="block" htmlFor="name">
               Name
@@ -34,8 +53,7 @@ const ContactMe = () => {
             <input
               type="text"
               id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              name="name" 
               required
               className="w-full border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-800 text-white placeholder-gray-400"
               placeholder="Enter your name"
@@ -49,8 +67,7 @@ const ContactMe = () => {
             <input
               type="email"
               id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              name="email"
               required
               className="w-full border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-800 text-white placeholder-gray-400"
               placeholder="Enter your email"
@@ -63,8 +80,7 @@ const ContactMe = () => {
             </label>
             <textarea
               id="note"
-              value={note}
-              onChange={(e) => setNote(e.target.value)}
+              name="note" 
               required
               className="w-full border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-800 text-white placeholder-gray-400"
               rows="4"
@@ -79,6 +95,8 @@ const ContactMe = () => {
             Send Message
           </button>
         </form>
+
+        {statusMessage && <p className="mt-4 text-center">{statusMessage}</p>}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ function App() {
           <Route path="/ContactMe" element={<ContactMe />} />
           <Route path="/MainProjects" element={<ProjectsPic />} />
         </Routes>
-
+        <Footer />
       </Router>
     </div>
   );

@@ -39,12 +39,10 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="bg-black h-[90px] text-gray-400 max-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent ml-4">
-          
-        </h1>
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent ml-4"></h1>
         <ul className="hidden md:flex">
           <li className="p-5 transition duration-300 hover:text-red-500">
-            <Link to="/" >Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="p-5 transition duration-300 hover:text-red-500">
             <Link to="/About">About</Link>
@@ -75,7 +73,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="p-2 transition duration-300 hover:text-red-500">
-              <Link to="/About" onClick={handleLinkClick} activeClassName="text-red-500">
+              <Link
+                to="/About"
+                onClick={handleLinkClick}
+                activeClassName="text-red-500"
+              >
                 About
               </Link>
             </li>

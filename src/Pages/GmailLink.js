@@ -11,7 +11,7 @@ const GmailLink = () => {
   return (
     <div>
       <MdMailOutline
-        style={{ color: 'black', fontSize: '50px', cursor: 'pointer' }}
+        style={{ color: "white", fontSize: "50px", cursor: "pointer" }}
         onClick={handleClick}
       />
     </div>

@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      scrollBehavior: {
+        smooth: 'smooth', // Corrected property name and value
+      },
+    },
   },
+  variants: {},
   plugins: [],
 }

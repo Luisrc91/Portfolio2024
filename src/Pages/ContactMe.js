@@ -14,7 +14,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className=" min-h-screen contact-me-section bg-black text-white px-4 py-8">
+    <div className="scroll-smooth min-h-screen bg-black text-white flex items-center justify-center px-4">
       <div className="contact-me-content max-w-lg mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">Contact Me</h2>
         <p className="text-center mb-6">

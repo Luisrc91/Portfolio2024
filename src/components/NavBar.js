@@ -61,9 +61,10 @@ const Navbar = () => {
           ref={navRef}
           className={
             nav
-              ? "rounded fixed h-full right-0 top-20 w-[40%] bg-[#0c0c0c] ease-in-out duration-400"
+              ? "rounded fixed h-full right-0 top-20 w-[50%] h-[85%] bg-black bg-opacity-70 ease-in-out duration-400"
               : "fixed right-[-100%]"
           }
+          
         >
           <h1 className="text-3xl primary-color m-4">Menu</h1>
           <ul className="p-8 text-2xl">

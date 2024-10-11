@@ -7,7 +7,7 @@ export default function Skills() {
         <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 mb-8">
           Languages and Tools
         </h1>
-        <div className="grid grid-cols- sm:grid-cols-4 lg:grid-cols-8 gap-5">
+        <div className="grid grid-cols-5 sm:grid-cols-4 lg:grid-cols-8 gap-5">
           <img
             className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 grayscale hover:grayscale-0 transition-all duration-300"
             src="https://img.icons8.com/color/480/html-5--v1.png"

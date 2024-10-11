@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import About from "./About";
 import ContactMe from "./ContactMe";
 import ProjectsPic from './ProjectsPic';
+import Skills from "./Skills";
 const Home = () => {
   return (
     <>
@@ -43,6 +44,7 @@ const Home = () => {
           </a>
         </div>
       </div>
+      <Skills />
       <About />
       <ProjectsPic />
       <ContactMe />

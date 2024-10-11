@@ -5,7 +5,7 @@ const About = () => {
     <div className="scroll-smooth min-h-screen flex flex-col justify-center items-center text-white px-4">
       <div className="max-w-4xl mx-auto">
         <div className="mb-6">
-          <h1 className="text-4xl font-bold">About Me</h1>
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block ">About Me</h1>
         </div>
         <div className="mb-6">
           <p className="text-xl">

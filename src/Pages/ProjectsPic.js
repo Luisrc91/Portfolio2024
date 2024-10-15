@@ -34,7 +34,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="scroll-smooth min-h-screen projects-section max-w-4xl mx-auto ">
+    <div className="scroll-smooth min-h-screen projects-section max-w-4xl mx-auto z-10 ">
       <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mb-6 ">
         My Projects
       </h1>

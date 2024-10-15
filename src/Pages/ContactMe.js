@@ -39,9 +39,15 @@ const ContactMe = () => {
           Feel free to reach out to me through the following:
         </p>
         <ul className="flex space-x-10 justify-center mb-6">
-          <GmailLink />
-          <LinkedinLink />
-          <GitHubLink username="Luisrc91" />
+          <li className="transition-transform transform hover:scale-110">
+            <GmailLink />
+          </li>
+          <li className="transition-transform transform hover:scale-110">
+            <LinkedinLink />
+          </li>
+          <li className="transition-transform transform hover:scale-110">
+            <GitHubLink username="Luisrc91" />
+          </li>
         </ul>
         <p className="text-white flex items-center justify-center px-4">or</p>
 

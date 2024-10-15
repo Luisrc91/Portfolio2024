@@ -38,8 +38,8 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="bg-black h-[90px] text-gray-400 max-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent ml-4"></h1>
+      <div className="bg-black h-[50px] text-gray-400 max-auto flex justify-between items-center">
+        <h1 className="text-3xl font-bold bg-gradient-to-bl from-red-500 to-orange-900 bg-clip-text text-transparent ml-4">LR</h1>
         <ul className="hidden md:flex">
           <li className="p-5 transition duration-300 hover:text-red-500">
             <Link to="/">Home</Link>
@@ -61,13 +61,13 @@ const Navbar = () => {
           ref={navRef}
           className={
             nav
-              ? "rounded fixed h-full right-0 top-20 w-[50%] h-[85%] bg-black ease-in-out duration-400"
+              ? "rounded fixed h-full right-0 top-20 w-[60%] h-[85%] bg-black ease-in-out duration-400"
               : "fixed right-[-100%]"
           }
           
         >
-          <h1 className="text-3xl primary-color m-4">Menu</h1>
-          <ul className="p-8 text-2xl">
+          <h1 className="text-2xl primary-color m-4">Menu</h1>
+          <ul className="p-6 text-3xl">
             <li className="p-2  transition duration-300 hover:text-red-500">
               <Link to="/" onClick={handleLinkClick}>
                 Home

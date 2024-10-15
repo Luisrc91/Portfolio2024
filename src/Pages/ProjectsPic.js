@@ -34,8 +34,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="scroll-smooth min-h-screen projects-section text-white py-8 px-4">
-      <h1 className="text-3xl font-bold text-center mb-6">My Projects</h1>
+    <div className="scroll-smooth min-h-screen projects-section max-w-4xl mx-auto ">
+      <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mb-6 ">
+        My Projects
+      </h1>
       <div className="projects-content max-w-screen-lg mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project) => (

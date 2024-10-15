@@ -11,7 +11,7 @@ import ProjectsPic from "./Pages/ProjectsPic";
 
 function App() {
   return (
-    <div className="scroll-smooth bg-gradient-to-br from-black  to-gray-800 min-h-screen">
+    <div className="scroll-smooth bg-gradient-to-bl from-black  to-gray-700 min-h-screen">
       <Router>
         <header className="App-header">
           <NavBar />

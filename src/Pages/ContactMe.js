@@ -34,7 +34,7 @@ const ContactMe = () => {
   return (
     <div className="scroll-smooth min-h-screen bg-black text-white flex items-center justify-center px-4">
       <div className="contact-me-content max-w-lg mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mb-6">Contact Me</h2>
         <p className="text-center mb-6">
           Feel free to reach out to me through the following:
         </p>

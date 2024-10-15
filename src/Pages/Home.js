@@ -2,8 +2,9 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import About from "./About";
 import ContactMe from "./ContactMe";
-import ProjectsPic from './ProjectsPic';
+import ProjectsPic from "./ProjectsPic";
 import Skills from "./Skills";
+
 const Home = () => {
   return (
     <>
@@ -11,20 +12,28 @@ const Home = () => {
         <div className="text-center px-5">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block">
-              Welcome, I'm a
+              Welcome,
+              <span className="text-white"> I am</span>
+              <br />
+              <TypeAnimation
+                className="text-white"
+                sequence={["Luis Ramirez", 1500]}
+                wrapper="span"
+                speed={10}
+                repeat={Infinity}
+              />
             </span>
           </h1>
-          <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="inline-block w-full">
-              {" "}
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">
+            I'm a
+            <span className="inline-block w-full text-white">
               <TypeAnimation
                 sequence={[
-                  "< Software Developer />",
-                  950,
-                  "< Frontend Developer />",
-                  950,
-                  "< Backend Developer />",
-                  950,
+                  "<Software Developer/>",
+                  1500,
+                  "<FullStack Developer/>",
+                  1500,
                 ]}
                 wrapper="span"
                 speed={30}
@@ -34,7 +43,7 @@ const Home = () => {
           </h1>
 
           <p className="text-white sm:text-lg my-6 lg:text-xl">
-            Hello my name is Luis Ramirez, I am a Full Stack Developer.
+            Turning ideas into reality through code and creativity.
           </p>
           <a
             href="/ContactMe"

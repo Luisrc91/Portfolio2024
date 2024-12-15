@@ -34,7 +34,9 @@ const ContactMe = () => {
   return (
     <div className="scroll-smooth min-h-screen bg-black text-white flex items-center justify-center px-4">
       <div className="contact-me-content max-w-lg mx-auto">
-        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mb-6">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mb-6">
+          Contact Me
+        </h2>
         <p className="text-center mb-6">
           Feel free to reach out to me through the following:
         </p>
@@ -49,9 +51,9 @@ const ContactMe = () => {
             <GitHubLink username="Luisrc91" />
           </li>
         </ul>
-        <p className="text-white flex items-center justify-center px-4">or</p>
+        {/* <p className="text-white flex items-center justify-center px-4">or</p> */}
 
-        <form ref={form} onSubmit={sendEmail} className="space-y-4">
+        {/* <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
             <label className="block" htmlFor="name">
               Name
@@ -100,9 +102,9 @@ const ContactMe = () => {
           >
             Send Message
           </button>
-        </form>
+        </form> */}
 
-        {statusMessage && <p className="mt-4 text-center">{statusMessage}</p>}
+        {/* {statusMessage && <p className="mt-4 text-center">{statusMessage}</p>} */}
       </div>
     </div>
   );

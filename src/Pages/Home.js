@@ -15,13 +15,14 @@ const Home = () => {
               Welcome,
               <span className="text-white"> I am</span>
               <br />
-              <TypeAnimation
+              <h1> Luis Ramirez</h1>
+              {/* <TypeAnimation
                 className="text-white"
                 sequence={["Luis Ramirez", 1500]}
                 wrapper="span"
                 speed={10}
                 repeat={Infinity}
-              />
+              /> */}
             </span>
           </h1>
 
@@ -30,10 +31,11 @@ const Home = () => {
             <span className="inline-block w-full text-white">
               <TypeAnimation
                 sequence={[
-                  "<Software Developer/>",
+                  "<Full-Stack Software Developer/>",
                   1500,
-                  "<FullStack Developer/>",
+                  "",
                   1500,
+                 
                 ]}
                 wrapper="span"
                 speed={30}
@@ -53,9 +55,9 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <Skills />
       <About />
       <ProjectsPic />
+      <Skills />
       <ContactMe />
     </>
   );

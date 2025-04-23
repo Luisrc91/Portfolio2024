@@ -4,11 +4,12 @@ export default function Skills() {
   return (
     <div className="scroll-smooth justify-center items-center text-white px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-6">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block">
+        <div className="flex justify-center">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 inline-block mx-auto mb-6">
             Languages and Tools
-          </h1>
+          </h2>
         </div>
+
         <div className="grid grid-cols-5 sm:grid-cols-4 lg:grid-cols-8 gap-5">
           <img
             className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 grayscale hover:grayscale-0 hover:scale-125 transition-all duration-300"
